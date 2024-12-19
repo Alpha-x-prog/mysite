@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Селекторы в CSS3</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="first_term.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main"></div>
+        <header>
+            <div class="head_of_site">
+                <figure>
+                    <img class="logo" src="../logo_planet.png" height=50em width=50em alt="Картинки нет">
+                    <figcaption class>Logo</figcaption>
+                </figure>
+                <div class="head_text">
+                    <p>Группа ЭФБО-03-23</p>
+                    <p>Поплёвин Кирилл Сергеевич</p>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar">
+            <a class="navbar_spacing" href="../main/main.html">Главная</a>
+            <a class="navbar_spacing" href="first_term.html">Первый семестр</a>
+            <a class="navbar_spacing" href="">Второй семестр</a>
+            <a class="navbar_spacing" href="/services/services.html">Услуги</a>
+            <a class="navbar_spacing" href="">Авторизация</a>
+        </nav>
+        <main class="content_creater">
+            <nav class="navbar_column"> 
+                <h3>Навигация по странице</h3>
+                <a href="#lecture">Лекции</a>
+                <a href="#practice">Практики</a>
+                <a href="#address">Адрес вуза</a>
+                <a href="#working_program">Рабочая программа</a>
+            </nav>
+            <article>
+                <h1>Первый семестр</h1>
+                <h3 id="lecture">Лекции</h3>
+                <div style="padding-left: 15px;">
+                    <table class="table table1">
+                        <thead>
+                            <tr class="main_string main_string1">
+                                <th class="grid-item">Номер</th>
+                                <th class="grid-item">Тема</th>
+                                <th class="grid-item">Посещение</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="string string1">
+                                <td class="grid-item">1</td>
+                                <td class="grid-item">Основы языка HTML</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">2</td>
+                                <td class="grid-item">Углубленное изучение HTML</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">3</td>
+                                <td class="grid-item">Основы работы с CSS</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">4</td>
+                                <td class="grid-item">Адаптивная верстка. Flexbox и Grid Layout</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">5</td>
+                                <td class="grid-item">Bootstrap - работа с фреймворком</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">6</td>
+                                <td class="grid-item">Основы языка JavaScript</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">7</td>
+                                <td class="grid-item">Работа с DOM и событиями в JavaScript</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                            <tr class="string string1">
+                                <td class="grid-item">8</td>
+                                <td class="grid-item">Введение в GitHub и GitHub Pages</td>
+                                <td><input type="checkbox" class="button-left"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                                    
+                <h3 id="practice">Практики</h3>
+                <div style="padding-left: 15px;padding-bottom: 15px;">
+                    <div style="padding-left: 15px;">
+                        <table class="table table2">
+                            <thead>
+                                <tr class="main_string main_string2">
+                                    <th class="grid-item">Номер</th>
+                                    <th class="grid-item">Тема</th>
+                                    <th class="grid-item">Посещение</th>
+                                    <th class="grid-item">Выполнение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="string string2">
+                                    <td class="grid-item">1</td>
+                                    <td class="grid-item">Основы языка HTML</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">2</td>
+                                    <td class="grid-item">Формы и кнопки в HTML</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">3</td>
+                                    <td class="grid-item">Таблицы и интерактивные элементы HTML</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">4</td>
+                                    <td class="grid-item">Основы работы с CSS</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">5</td>
+                                    <td class="grid-item">Работа с классами в CSS</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">6</td>
+                                    <td class="grid-item">Работа с сетками и разметкой в HTML</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">7</td>
+                                    <td class="grid-item">Адаптивная вёрстка</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">8</td>
+                                    <td class="grid-item">Bootstrap</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">9</td>
+                                    <td class="grid-item">Основы языка JavaScript</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">10</td>
+                                    <td class="grid-item">Базовые задачи на JS</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">11</td>
+                                    <td class="grid-item">DOM-структура приложений и работа с объектами в языке JS</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">12</td>
+                                    <td class="grid-item">Встраивание скриптов</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">13</td>
+                                    <td class="grid-item">Отладка сценариев</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">14</td>
+                                    <td class="grid-item">Анимации и работа с ними</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">15</td>
+                                    <td class="grid-item">Github</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                                <tr class="string string2">
+                                    <td class="grid-item">16</td>
+                                    <td class="grid-item">Защита проекта</td>
+                                    <td><input type="checkbox" class="button-left"></td>
+                                    <td><input type="checkbox" class="button-right"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    
+                </div>
+                
+                <h3 id="address">Занятия проходят по адресу: Москва, проспект Вернадского, 78, стр. 4</h3>
+                <!-- <div style="position:none;overflow:hidden; padding: 15px;"><a href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">МИРЭА, Российский технологический университет</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?ll=37.480224%2C55.669957&z=14" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+                <div style="overflow: hidden; padding: 15px; max-width: 100%; box-sizing: border-box;">
+                    <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                        <iframe src="https://yandex.ru/map-widget/v1/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?ll=37.480224%2C55.669957&z=14"
+                                width="100%" height="100%" frameborder="1" allowfullscreen="true"
+                                style="position: absolute; top: 0; left: 0;"></iframe>
+                    </div>
+                </div>
+                <h3 id="working_program">Рабочая программа</h3>
+                <embed src="example.pdf" width="95%" height="500px" type="application/pdf" style="padding:15px;">
+                <div style="padding-bottom: 40px;"></div>
+            </article>
+        </main>
+        <footer>
+            <a href="#top" class="scroll-to-top">&#9650;</a>
+            <div class="footer-content">
+                <p>&copy; Поплёвин Кирилл, 2024</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/123456789" target="_blank">
+                        <img src="../logo_whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://vk.com/id123456789" target="_blank">
+                        <img src="../logo_vk.jpg" alt="VK">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

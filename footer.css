@@ -1,0 +1,56 @@
+footer {
+  border: 2px solid rgb(161, 109, 146);
+  border-top: 0;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  position: absolute;
+  right: 0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.scroll-to-top {
+  border: 2px solid rgb(161, 109, 146);
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Медиазапрос для экранов шириной 600px и меньше */
+@media (max-width: 600px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .social-icons {
+      position: static;
+      margin-top: 10px;
+  }
+}

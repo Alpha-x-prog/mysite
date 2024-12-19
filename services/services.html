@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Селекторы в CSS3</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main"></div>
+        <header>
+            <div class="head_of_site">
+                <figure>
+                    <img class="logo" src="../logo_planet.png" height=50em width=50em alt="planet">
+                    <figcaption class>Logo</figcaption>
+                </figure>
+                <div class="head_text">
+                    <p>Группа ЭФБО-03-23</p>
+                    <p>Поплёвин Кирилл Сергеевич</p>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar">
+            <a class="navbar_spacing" href="../main/main.html">Главная</a>
+            <a class="navbar_spacing" href="../first_term/first_term.html">Первый семестр</a>
+            <a class="navbar_spacing" href="">Второй семестр</a>
+            <a class="navbar_spacing" href="services.html">Услуги</a>
+            <a class="navbar_spacing" href="">Авторизация</a>
+        </nav>
+        <main class="content_creater"> 
+            <nav class="navbar_column"> 
+                <h3>Навигация по странице</h3>
+                <a href="#part1">Фронтенд</a>
+                <a href="#part2">Бэкенд</a>
+            </nav>
+            <article>
+                <h1 class="navbar_spacing">Разработка веб-приложений</h1>
+                <div class="picture_site">
+                    <figure class="figcaption_3">
+                        <img src="nft1.jpg" class="img_size" alt="visitka">
+                        <div class="centure-button">
+                            <figcaption class="" style="text-align:center;">Сайт-визитка</figcaption>
+                            <button class="open-modal button_window" data-service="Сайт-визитка">Обратная связь</button>
+                        </div>
+
+                    </figure>
+                    
+                    <figure class="figcaption_3">
+                        <img src="nft2.jpg" class="img_size" alt="very importal picture">
+                        <div class="centure-button">
+                            <figcaption class="" style="text-align:center;">Корпоративный сайт</figcaption>
+                            <button class="open-modal button_window" data-service="Корпоративный сайт">Обратная связь</button>
+                        </div>
+                    </figure>
+                    
+                    <figure class="figcaption_3">
+                        <img src="nft3.jpg" class="img_size" alt="shop">
+                        <div class="centure-button">
+                            <figcaption class="" style="text-align:center;">Интернет магазин</figcaption>
+                            <button class="open-modal button_window" data-service="Интернет магазин">Обратная связь</button>
+                        </div>
+                    </figure>
+                    
+                </div>
+                <p class="padding_text">Кроме вёрстки фронтенд-разработчики умеют оживлять страницы&nbsp;&mdash; делать, чтобы кнопки реагировали на&nbsp;нажатия, слайдеры листались, а&nbsp;по&nbsp;клику появлялось окошко авторизации. Для этого они используют JavaScript&nbsp;&mdash; это язык программирования, который работает во&nbsp;всех браузерах у&nbsp;всех пользователей. В&nbsp;реальной работе верстальщики делают не&nbsp;только страницы&nbsp;&mdash; иногда нужно сверстать макет для Wordpress или Drupal или подготовить вёрстку, которую будут использовать React-разработчики.</p>
+                <p class="padding_text">React-разработчик должен хорошо понимать и&nbsp;уметь всё, что умеет верстальщик, но&nbsp;часто ему не&nbsp;обязательно верстать самому. Такие разработчики чаще пишут код приложений на&nbsp;React, но&nbsp;для этого им&nbsp;нужно отлично знать &laquo;ванильный&raquo; JavaScript&nbsp;&mdash; просто чистый язык без примесей, на&nbsp;котором тоже можно много всего сделать.</p>
+            </article>
+        </main>
+
+        <footer>
+            <a href="#top" class="scroll-to-top">&#9650;</a>
+            <div class="footer-content">
+                <p>&copy; Поплёвин Кирилл, 2024</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/123456789" target="_blank">
+                        <img src="../logo_whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://vk.com/id123456789" target="_blank">
+                        <img src="../logo_vk.jpg" alt="VK">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Модальное окно -->
+        
+    </div>
+</body>
+<div id="modal" class="modal">
+    <!-- <div class="modal-content"> -->
+        <!-- <div class="table"> -->
+            <!-- <span class="close">&times;</span> -->
+            <form id="add-form">
+                <span class="close">&times;</span>
+                <h2 style="padding: 10px;" id="modalTitle">Разработка веб-приложения</h2>
+                <p style="padding: 10px;color:white;">Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+                <div class="table-view">        
+                    <div class="form-example">
+                        <label for="name">Как вас зовут</label>
+                        <input type="text" id="name" required></input></br>
+                    </div>
+                    <div class="form-example">
+                        <label for="e-mail">Ваш e-mail</label>
+                        <input type="email" id="e-mail" pattern=".+@+.+"required></input></br>
+                    </div>
+                    <div class="form-example">
+                        <label for="phone">Телефон</label>
+                        <input placeholder="+7 719 999 99 99" id="phone"required></input></br>
+                    </div>
+                    <div class="form-example">
+                        <label for="country-select">Страна</label>
+                        <select name="country" id="country-select">
+                            <option value="Russia">Russia</option>
+                            <option value="USA">USA</option>
+                            <option value="Germany">Germany</option>
+                        </select></br>
+                    </div>
+                    <div class="form-example">
+                        <label>Дата</label>
+                        <input type="date" required></input></br>
+                    </div>
+                    <div class="form-example">
+                        <label for="comment-write">Комментарий</label>                   
+                        <textarea id="comment-write" name="comment" rows="5" style="max-width: 350px;;"></textarea></br>
+                    </div>
+                </div>
+                <div>
+                    <input class="checkbox" type="checkbox"  id="rights" name="rights" required></input>
+                    <label class="checkbox" for="rights">Согласен на обработку моих персональных данных</label>
+                </div>
+                <div class="centure_button">
+                    <button id="send-modal" type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        <!-- </div> -->
+    <!-- </div> -->
+</div>
+</div>
+<script src="maket3.js"></script>
+</html>
